@@ -1,1 +1,1 @@
-# fagkvelden-uio-2019
+# Fagkvelden 2019
