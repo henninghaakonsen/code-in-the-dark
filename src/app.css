@@ -1,2 +1,53 @@
+* {
+    color: white;
+}
+
 .app {
+    background-color: black;
+    height: 100%;
+}
+
+.content {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 70rem;
+}
+
+.logo {
+    height: 3rem;
+}
+
+.title {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.gif {
+    display: flex;
+    margin-bottom: 20%;
+    justify-content: center;
+}
+
+.program {
+    display: grid;
+    grid-template-columns: 15rem auto;
+}
+
+.programlister {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+.programlister__element {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.td__tid {
+    vertical-align: top;
+}
+
+* td {
+    min-width: 8rem;
 }
