@@ -5,10 +5,10 @@
 .app {
     background-color: black;
     height: 100%;
+    overflow: auto;
 }
 
 .content {
-    height: 100%;
     margin: 0 auto;
     max-width: 70rem;
 }
@@ -24,13 +24,13 @@
 
 .gif {
     display: flex;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
     justify-content: center;
 }
 
 .program {
-    display: grid;
-    grid-template-columns: 15rem auto;
+    display: flex;
+    margin-bottom: 5rem;
 }
 
 .programlister {
@@ -50,4 +50,5 @@
 
 * td {
     min-width: 8rem;
+    max-width: 10rem;
 }

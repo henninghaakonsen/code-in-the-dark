@@ -2,19 +2,23 @@ export const program = {
     tech: {
         tittel: "Track 1",
         aktiviteter: [
-            { tidspunkt: "17:40 - 18:05", aktivitet: "Pushwagnersizer" },
+            { tidspunkt: "17:40 - 18:05", aktivitet: "?" },
             {
                 tidspunkt: "18:15 - 18:45",
                 aktivitet:
                     "Kotlin, ett digg programmeringsspråk. CSS på en måte du ikke trodde gikk an."
             },
-            { tidspunkt: "18:55 - 19:20", aktivitet: "Mikrotekst" }
+            {
+                tidspunkt: "18:55 - 19:20",
+                aktivitet: "Å skrive bedre brukeropplevelser"
+            },
+            { tidspunkt: "19:30 - 19:45", aktivitet: "Konseptarbeid på speed" }
         ]
     },
     interactive: {
         tittel: "Track 2",
         aktiviteter: [
-            { tidspunkt: "17:40 - 18:05", aktivitet: "placeholder" },
+            { tidspunkt: "17:40 - 18:05", aktivitet: "?" },
             { tidspunkt: "18:15 - 18:45", aktivitet: "Nye vyer" },
             {
                 tidspunkt: "18:55 - 19:20",

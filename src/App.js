@@ -24,10 +24,7 @@ class App extends Component {
                         <div className="programlister">
                             {Object.values(program).map(omrade => {
                                 return (
-                                    <div
-                                        key={omrade.tittel}
-                                        className="programlister__list"
-                                    >
+                                    <div key={omrade.tittel}>
                                         <h3>{omrade.tittel}</h3>
                                         <table className="programlister__table">
                                             {omrade.aktiviteter.map(
