@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./app.css";
-import logo from "./logo.svg";
-import illustrasjon from "./illustrasjon.svg";
+import { PROGRAM, GIF_SOURCE } from "./constants";
 
-import { program, GIF_SOURCE } from "./constants";
+const ILLUSTRASJON_SRC = "illustrasjon.svg";
+const LOGO_SRC = "logo.svg";
 
 class App extends Component {
     render() {
@@ -11,7 +11,7 @@ class App extends Component {
             <div className="app">
                 <div className="content">
                     <div className="title">
-                        <img alt="logo" className="logo" src={logo} />
+                        <img alt="logo" src={LOGO_SRC} />
                     </div>
 
                     <div className="gif">
@@ -19,14 +19,17 @@ class App extends Component {
                     </div>
 
                     <div className="program">
-                        <img alt="illustrasjon" src={illustrasjon} />
+                        <img alt="illustrasjon" src={ILLUSTRASJON_SRC} />
 
                         <div className="programlister">
-                            {Object.values(program).map(omrade => {
+                            {PROGRAM.map(omrade => {
                                 return (
                                     <div key={omrade.tittel}>
                                         <h3>{omrade.tittel}</h3>
-                                        <table className="programlister__table">
+                                        <table
+                                            className="programlister__table"
+                                            cellSpacing={10}
+                                        >
                                             {omrade.aktiviteter.map(
                                                 aktivitet => (
                                                     <tbody

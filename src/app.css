@@ -10,7 +10,7 @@
 
 .content {
     margin: 0 auto;
-    max-width: 70rem;
+    max-width: 80rem;
 }
 
 .logo {
@@ -35,20 +35,18 @@
 
 .programlister {
     display: flex;
-    justify-content: space-between;
     margin-left: 1rem;
 }
 
 .programlister__element {
     list-style-type: none;
-    padding-left: 1rem;
+}
+
+* td:not(.td__tid) {
+    max-width: 20rem
 }
 
 .td__tid {
     vertical-align: top;
-}
-
-* td {
-    min-width: 8rem;
-    max-width: 10rem;
+    width: 8rem;
 }
