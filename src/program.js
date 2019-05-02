@@ -9,7 +9,7 @@ export const PROGRAM = [
             },
             {
                 tidspunkt: "18:15 - 18:30",
-                aktivitet: "Kotlin, ett digg programmeringsspråk."
+                aktivitet: "Kotlin, et digg programmeringsspråk."
             },
             {
                 tidspunkt: "18:30 - 18:45",
@@ -21,7 +21,7 @@ export const PROGRAM = [
             },
             {
                 tidspunkt: "19:10 - 19:25",
-                aktivitet: "Tipio."
+                aktivitet: "Tipio - en startup som snur opp ned på netthandel"
             },
             { tidspunkt: "19:30 - 19:45", aktivitet: "Konseptarbeid på speed." }
         ]
@@ -53,6 +53,3 @@ export const PROGRAM = [
         ]
     }
 ];
-
-export const GIF_SOURCE =
-    "https://media.giphy.com/media/DfSLII45H40RW/giphy-downsized.gif";
