@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import "./app.css";
-import { PROGRAM, GIF_SOURCE } from "./constants";
+import { PROGRAM } from "./program";
 
-const ILLUSTRASJON_SRC = "illustrasjon.svg";
 const LOGO_SRC = "logo.svg";
+const ILLUSTRASJON_SRC = "illustrasjon.svg";
+const GIF_SRC =
+    "https://media.giphy.com/media/DfSLII45H40RW/giphy-downsized.gif";
 
 class App extends Component {
     render() {
@@ -15,7 +17,7 @@ class App extends Component {
                     </div>
 
                     <div className="gif">
-                        <img alt="gif" src={GIF_SOURCE} />
+                        <img alt="gif" src={GIF_SRC} />
                     </div>
 
                     <div className="program">

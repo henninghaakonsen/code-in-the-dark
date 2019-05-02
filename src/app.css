@@ -13,10 +13,6 @@
     max-width: 80rem;
 }
 
-.logo {
-    height: 3rem;
-}
-
 .title {
     text-align: center;
     padding-top: 2rem;
@@ -49,4 +45,6 @@
 .td__tid {
     vertical-align: top;
     width: 8rem;
+    height: 100%;
+    background-color: black
 }
