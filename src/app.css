@@ -28,23 +28,3 @@
     display: flex;
     margin-bottom: 5rem;
 }
-
-.programlister {
-    display: flex;
-    margin-left: 1rem;
-}
-
-.programlister__element {
-    list-style-type: none;
-}
-
-* td:not(.td__tid) {
-    max-width: 20rem
-}
-
-.td__tid {
-    vertical-align: top;
-    width: 8rem;
-    height: 100%;
-    background-color: black
-}

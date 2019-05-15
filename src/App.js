@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./app.css";
-import { PROGRAM } from "./program";
+import { omoss } from "./omoss";
 
 const LOGO_SRC = "logo.svg";
 const ILLUSTRASJON_SRC = "illustrasjon.svg";
@@ -23,40 +23,13 @@ class App extends Component {
                     <div className="program">
                         <img alt="illustrasjon" src={ILLUSTRASJON_SRC} />
 
-                        <div className="programlister">
-                            {PROGRAM.map(omrade => {
+                        <div className="programflex">
+                            {omoss.map(omrade => {
                                 return (
-                                    <div key={omrade.tittel}>
+                                    <React.Fragment>
                                         <h3>{omrade.tittel}</h3>
-                                        <table
-                                            className="programlister__table"
-                                            cellSpacing={10}
-                                        >
-                                            {omrade.aktiviteter.map(
-                                                aktivitet => (
-                                                    <tbody
-                                                        key={
-                                                            aktivitet.aktivitet
-                                                        }
-                                                    >
-                                                        <tr>
-                                                            <td className="td__tid">
-                                                                {
-                                                                    aktivitet.tidspunkt
-                                                                }
-                                                                :{" "}
-                                                            </td>
-                                                            <td>
-                                                                {
-                                                                    aktivitet.aktivitet
-                                                                }
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                )
-                                            )}
-                                        </table>
-                                    </div>
+                                        <span>{omrade.detaljer}</span>
+                                    </React.Fragment>
                                 );
                             })}
                         </div>
