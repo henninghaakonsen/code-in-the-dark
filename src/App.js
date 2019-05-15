@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./app.css";
-import { PROGRAM } from "./program";
+import { omoss } from "./omoss";
 
 const LOGO_SRC = "logo.svg";
 const ILLUSTRASJON_SRC = "illustrasjon.svg";
