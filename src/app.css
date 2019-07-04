@@ -15,13 +15,24 @@
 
 .title {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
-.gif {
+.gif-container {
     display: flex;
     margin-bottom: 5%;
     justify-content: center;
+}
+
+.gif {
+    height: 25rem;
+    width: 25rem;
+}
+
+.gif-summer {
+    height: 20rem;
+    width: 20rem;
+    padding-right: 2rem;
 }
 
 .program {

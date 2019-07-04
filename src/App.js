@@ -3,7 +3,8 @@ import "./app.css";
 import { omoss } from "./omoss";
 
 const LOGO_SRC = "logo.svg";
-const ILLUSTRASJON_SRC = "illustrasjon.svg";
+const ILLUSTRASJON_SRC =
+    "https://media.giphy.com/media/RjeDmZKj9uHU8zcrk8/giphy.gif";
 const GIF_SRC =
     "https://media.giphy.com/media/DfSLII45H40RW/giphy-downsized.gif";
 
@@ -16,12 +17,16 @@ class App extends Component {
                         <img alt="logo" src={LOGO_SRC} />
                     </div>
 
-                    <div className="gif">
-                        <img alt="gif" src={GIF_SRC} />
+                    <div className="gif-container">
+                        <img className="gif" alt="gif" src={GIF_SRC} />
                     </div>
 
                     <div className="program">
-                        <img alt="illustrasjon" src={ILLUSTRASJON_SRC} />
+                        <img
+                            className="gif-summer"
+                            alt="illustrasjon"
+                            src={ILLUSTRASJON_SRC}
+                        />
 
                         <div className="programflex">
                             {omoss.map(omrade => {
